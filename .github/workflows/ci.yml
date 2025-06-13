@@ -36,7 +36,7 @@ jobs:
       - name: Check for formatting issues
         run: test -z $(go fmt ./...)
   lint:
-    name: lint
+    name: Lint
     runs-on: ubuntu-latest
 
     steps:
