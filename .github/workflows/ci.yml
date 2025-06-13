@@ -42,7 +42,7 @@ jobs:
       - name: Run Static Checker
         run: staticcheck ./...
 
-    style:
+    lint:
       name: Lint
       runs-on: ubuntu-latest
 
