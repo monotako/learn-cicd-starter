@@ -31,7 +31,7 @@ jobs:
         with:
           version: '>= 363.0.0'
       
-      - name: 'Use gcloud CLI'
-        run:  'gcloud info'
+      - name: 'Upload docker image to Artifact Registry'
+        run:  'gcloud builds submit --tag us-central1-docker.pkg.dev/notely-463409/notely-ar-repo/notely:latest .'
  
       
